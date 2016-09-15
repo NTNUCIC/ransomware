@@ -1,0 +1,154 @@
+	<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>勒索軟體OOXX</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta name="og:title" content="勒索軟體OOXX">
+    <meta name="og:url" content="http://ntnucic.github.io/Ransomware/">
+    <meta name="og:description" content="國立臺灣師範大學資訊研究社105年度第一次迎新茶會">
+    <meta name="og:image" content="images/cic.jpg">
+    <meta name="og:site_name" content="NTNUCIC">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+        td{
+             text-align:center !important;
+             border:0 !important;
+        }
+        h2 {
+            font-size: 1.8em !important;
+        }
+        #intro div{
+    display: inline-block;
+    margin: 0 2em;
+        }
+        #intro img{
+          height:15rem;
+          border-radius: 5%;
+        }
+        #review img{
+    height: 30rem;
+        }
+        #join img{
+          width:10rem;
+          margin:0;
+        }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>勒索軟體OOXX</h1>
+          <h3>林品儒 105/9/22</h3>
+        </section>
+
+        <section>
+          <p class="fragment">[問卦]&nbsp;有沒有mp3檔打不開的八卦</p>
+          <p class="fragment">[爆卦]&nbsp;收信後副檔名都變成.obov了</p>
+          <p class="fragment">[超幹]&nbsp;比特幣是在漲三小喇</p>                    
+        </section>
+        
+        <section>
+          <h1>勒索軟體</h1>
+          <p class="fragment">相信各位都有聽過如此慘劇</p>
+          <p class="fragment">只是收了信下載個東西</p>
+          <p class="fragment">文件照片都打不開惹</p>
+        </section>
+        
+        <section>
+          <h1>此為何物</h1>
+          <p class="fragment">惡意軟體阻斷電腦使用以獲取贖金</p>
+          <p class="fragment">從加密檔案到綁架系統</p>
+          <p class="fragment">使用比特幣隱藏身份</p>
+          <p class="fragment">近年來越發盛行...</p>
+        </section>
+
+        <section>
+          <section>
+            <h1>原理簡介</h1>
+            <p class="fragment">利用瀏覽器或外掛套件漏洞下載檔案</p>
+            <p class="fragment">遠端執行或註冊該檔案開機啟動</p>
+            <p class="fragment">對目標檔案或是硬碟進行加密</p>
+            <p class="fragment">告知被害者回復方法並要求贖金</p>
+          </section>
+          
+          <section>
+            <h1>漏洞</h1>
+            <p class="fragment">瀏覽器漏洞</p>
+            <p class="fragment">外掛套件漏洞</p>
+            <p class="fragment">服務漏洞</p>
+          </section>
+          
+          <section>
+            <h1>瀏覽器漏洞</h1>
+            <p class="fragment">三巨頭IE,GC,FX</p>
+            <p class="fragment">當然會對市佔率高的為重點攻擊</p>
+            <p class="fragment">於是IE成為刀下亡魂</p>
+          </section>
+        </section>        
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
+
+    </script>
+
+  </body>
+</html>
